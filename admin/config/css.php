@@ -39,6 +39,23 @@
     #btn-debug{
     	
     	position: absolute;
+    	right: 5px;
     }
 
+	#console-debug {
+    	
+    	position: absolute;
+    	top: 50px;
+    	left: 0px;
+    	width:30%;
+    	height:700px;
+    	overflow-y:scroll;
+    	background-color: #FFFFFF;
+    	box-shadow: 2px 2px 5px #CCCCCC;
+    }
+    
+   	#console-debug pre{
+    	
+    	    }
+    
 </style>

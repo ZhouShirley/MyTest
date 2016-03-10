@@ -13,25 +13,11 @@
 <body>
 
 	<?php include(D_TEMPLATE.'/navigation.php'); //Page Navigation ?>
-	<div class="container">
-			<h1><?php echo $page['header'];?> </h1>	
-			<?php echo $page['body_formatted'];?>
-			<!-- for use of debug -->
-			<?php if(isset($_GET['debug']) == 1){ ?>
-			<pre>
-			<?php print_r($page);?>
-			</pre>
-			<?php }?>
-			<!-- for use of debug end -->
-	</div>
+	<h1>Admin Dashboard</h1>
 		
 	<?php include(D_TEMPLATE.'/footer.php'); //Page Footer ?>
    
-    <?php if($debug == 1){ ?>
-    	
-    <div id="console-debug">
-    	Test Debug Window   	
-    </div>		
-    <?php }?>
+    <?php if($debug == 1){ include('widgets/debug.php');}?>
+    	    
 </body>
 </html>

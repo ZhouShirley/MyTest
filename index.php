@@ -27,11 +27,6 @@
 		
 	<?php include(D_TEMPLATE.'/footer.php'); //Page Footer ?>
    
-    <?php if($debug == 1){ ?>
-    	
-    <div id="console-debug">
-    	Test Debug Window   	
-    </div>		
-    <?php }?>
+    <?php if($debug == 1){include('widgets/debug.php');}?>
 </body>
 </html>

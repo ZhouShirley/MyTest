@@ -1,8 +1,8 @@
 <?php
 
 //setup file:
-#Database connection here..
-$dbc = mysqli_connect('localhost','shirley_test','12345','test') or die('Could not connect because:'.mysqli_connect_error());
+# Database Connection
+include('../config/connection.php');
 
 //constants:
 DEFINE('D_TEMPLATE','template');
