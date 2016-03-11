@@ -27,7 +27,7 @@ if(isset($_GET['page'])){
 
 //page setup
   $page=data_page($dbc, $pageid); 
-  
+  $user = data_user($dbc, $_SESSION['username']);
 
   
 ?>
